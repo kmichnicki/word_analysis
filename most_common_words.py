@@ -1,12 +1,12 @@
-##In command line type
+##In command line navigate to the folder with this script and the text file you want to analyze.
 ##
 ##for windows:
-##type alice.txt | python most_common_words.py number_of_words
+##type alice.txt | python most_common_words.py
 import sys
 from collections import Counter
 from matplotlib import pyplot as plt
 
-num_words=10
+num_words=10 #this the number of words that shows up in the bar graph.
 all_words=[]
 for line in sys.stdin:
     for word in line.strip().split():
